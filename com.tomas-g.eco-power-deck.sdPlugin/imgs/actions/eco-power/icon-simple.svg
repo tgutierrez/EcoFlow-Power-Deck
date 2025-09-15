@@ -1,0 +1,75 @@
+<svg width="144" height="144" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144">
+  <defs>
+    <!-- Gradient for solar panel -->
+    <linearGradient id="solarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e5a96;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for battery -->
+    <linearGradient id="batteryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#009951;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="144" height="144" rx="16" ry="16" fill="url(#bgGradient)" stroke="#1a252f" stroke-width="2"/>
+  
+  <!-- Solar Panel -->
+  <g transform="translate(25, 25)">
+    <!-- Panel frame -->
+    <rect x="0" y="0" width="45" height="35" rx="4" ry="4" fill="url(#solarGradient)" stroke="#2c5aa0" stroke-width="2"/>
+    
+    <!-- Panel grid lines -->
+    <line x1="15" y1="2" x2="15" y2="33" stroke="#1e5a96" stroke-width="1"/>
+    <line x1="30" y1="2" x2="30" y2="33" stroke="#1e5a96" stroke-width="1"/>
+    <line x1="2" y1="11.5" x2="43" y2="11.5" stroke="#1e5a96" stroke-width="1"/>
+    <line x1="2" y1="23.5" x2="43" y2="23.5" stroke="#1e5a96" stroke-width="1"/>
+    
+    <!-- Sun -->
+    <circle cx="22.5" cy="-10" r="6" fill="#ffd700"/>
+    <g transform="translate(22.5, -10)" stroke="#ffd700" stroke-width="2" stroke-linecap="round">
+      <line x1="0" y1="-12" x2="0" y2="-10"/>
+      <line x1="8.5" y1="-8.5" x2="7" y2="-7"/>
+      <line x1="12" y1="0" x2="10" y2="0"/>
+      <line x1="8.5" y1="8.5" x2="7" y2="7"/>
+      <line x1="0" y1="12" x2="0" y2="10"/>
+      <line x1="-8.5" y1="8.5" x2="-7" y2="7"/>
+      <line x1="-12" y1="0" x2="-10" y2="0"/>
+      <line x1="-8.5" y1="-8.5" x2="-7" y2="-7"/>
+    </g>
+  </g>
+  
+  <!-- Battery -->
+  <g transform="translate(74, 80)">
+    <!-- Battery body -->
+    <rect x="0" y="0" width="40" height="25" rx="5" ry="5" fill="url(#batteryGradient)" stroke="#007a3d" stroke-width="2"/>
+    
+    <!-- Battery terminal -->
+    <rect x="40" y="7" width="5" height="11" rx="2" ry="2" fill="#00cc6a"/>
+    
+    <!-- Battery charge level -->
+    <rect x="3" y="3" width="32" height="19" rx="2" ry="2" fill="#00ff88" opacity="0.9"/>
+    
+    <!-- Lightning bolt -->
+    <path d="M18 5 L16 12 L20 12 L22 20 L24 12 L20 12 Z" fill="#ffd700"/>
+  </g>
+  
+  <!-- Connection arrow -->
+  <g transform="translate(50, 50)" fill="#00ff88">
+    <path d="M0 5 L15 10 L12 7 L25 12 L22 9 L37 14" stroke="#00ff88" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="8" cy="7" r="2" fill="#ffd700"/>
+    <circle cx="22" cy="11" r="2" fill="#ffd700"/>
+    <circle cx="30" cy="13" r="2" fill="#ffd700"/>
+  </g>
+  
+  <!-- Power indicator -->
+  <circle cx="20" cy="124" r="5" fill="#00ff88"/>
+</svg>

@@ -1,0 +1,47 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define the clipping path for rounded corners -->
+    <clipPath id="roundedClip">
+      <rect x="5" y="5" width="90" height="90" rx="10" ry="10"/>
+    </clipPath>
+    
+    <!-- Define gradient background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d2d2d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with rounded corners -->
+  <rect x="5" y="5" width="90" height="90" rx="10" ry="10" 
+        fill="url(#bgGradient)" stroke="#444" stroke-width="2"/>
+  
+  <!-- Clipped content area for marquee -->
+  <g clip-path="url(#roundedClip)">
+    <!-- Scrolling text content -->
+    <g>
+      <!-- Static text content -->
+      <text x="5" y="45" fill="#ffd700" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+        ☀️: 245.3 W
+      </text>
+      <text x="5" y="60" fill="#00ff88" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+        ⚡: 230.7 W
+      </text>
+      <text x="5" y="75" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+        🔌: 180.5 W
+      </text>
+    </g>
+  </g>
+  
+  <!-- Status indicators -->
+  <circle cx="15" cy="20" r="8" fill="#00ff88" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Labels for clarity -->
+  <text x="28" y="24" fill="#ccc" font-family="Arial, sans-serif" font-size="10">LIVE</text>
+  
+  <!-- Bottom status bar -->
+  <rect x="10" y="88" width="80" height="4" rx="2" ry="2" fill="#333"/>
+  <rect x="10" y="88" width="22.1123" height="4" rx="2" ry="2" fill="#00ff88" />
+</svg>

@@ -1,0 +1,45 @@
+{
+	"Name": "EcoFlow Power Deck",
+	"Version": "0.0.0.1",
+	"Author": "Tomas G",
+	"Actions": [
+		{
+			"UUID": "com.tomas-g.eco-power-deck.eco-power",
+			"Icon": "imgs/actions/eco-power/icon-simple",
+			"Name": "EcoFlow Power Status",
+			"Controllers": ["Keypad"],
+			"Tooltip": "Display EcoFlow power generation and consumption",
+			"PropertyInspectorPath": "ui/EcoPowerActions.html",
+			"States": [
+				{
+					"Image": "imgs/actions/eco-power/icon-simple"
+				}
+	
+			]
+		}
+	],
+	"Category": "EcoFlow Power Deck",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "EcoFlow power monitoring for Stream Deck",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.5"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.15"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "com.tomas-g.eco-power-deck"
+}
